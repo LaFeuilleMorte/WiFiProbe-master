@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.55"
+            android:id="@+id/button_filter_user"
+            android:layout_margin="3dp"
+            android:text="过滤"
+            android:textSize="13sp"
+            />
+        <Button android:id="@+id/sort_filter_button_user"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1.45"
+            android:text="按名称排序"
+            android:textSize="13sp"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorCrimson"/>
+        <Button android:id="@+id/flag_user"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1.55"
+            android:text="升序"
+            android:textSize="13sp"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorCrimson"/>
+        <Button android:id="@+id/clr_his"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.55"
+            android:textColor="#ff0000"
+            android:text="清空"
+            android:textSize="13sp"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+    <ListView android:id="@+id/list_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textFilterEnabled="true"
+        android:divider="@color/Cran"
+        android:dividerHeight="3dp"
+        >
+    </ListView>
+</LinearLayout>

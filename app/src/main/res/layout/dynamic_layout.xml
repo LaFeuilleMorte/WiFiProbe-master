@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="估算距离："
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:id="@+id/tv_dyn"/>
+    <TextView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:text="预测趋势："
+    android:textSize="15sp"
+    android:textColor="#000000"
+    android:id="@+id/tv_trend"/>
+<com.example.administrator.myapplication.BullsView
+    android:layout_width="match_parent"
+    android:id="@+id/bulls"
+    android:layout_height="match_parent"/>
+</LinearLayout>

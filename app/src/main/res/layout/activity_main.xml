@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.MainActivity">
+    <RelativeLayout android:layout_width="match_parent"
+        android:id="@+id/bg_dian"
+        android:layout_height="40dp"
+        android:background="#483D8B"
+        android:layout_alignParentTop="true">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帮助"
+        android:background="#483D8B"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFF0F5"
+        android:clickable="true"
+        android:id="@+id/help_me"
+        android:textSize="18sp"
+        />
+     <Button android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="测试"
+         android:textColor="#FFF0F5"
+         android:id="@+id/test_serial"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bg_dian"
+        android:text="浙江大学信息与电子工程学院"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/fuchsia"
+        android:layout_marginTop="13dp"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:text="꧁༺欢迎使用WiFi探针APP༻꧂"
+        android:textSize="30dp"
+        android:textColor="#00FFFF"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:id="@+id/paomadeng"
+        android:scrollHorizontally="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"/>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+          <LinearLayout android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="20dp"
+                  android:layout_weight="2.5"
+                  android:textSize="26sp"
+                  android:text="用户"
+                  android:textColor="#0000CD" />
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:textSize="23sp"
+                  android:id="@+id/account_home"
+                  android:textColor="#000000" />
+          </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="2.5"
+                android:textSize="26sp"
+                android:text="密码"
+                android:textColor="#0000CD" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:textSize="23sp"
+                android:id="@+id/password_home"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000CD"
+                android:textSize="15sp"
+                android:text="记住密码"/>
+            <CheckBox android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/remember_pwd"
+                />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:textSize="15sp"
+                android:id="@+id/reg_name"
+                android:clickable="true"
+                android:textColor="@color/fuchsia"
+                android:text="前往注册"/>
+
+        </LinearLayout >
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="23sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/log_in"
+            android:text="登录"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

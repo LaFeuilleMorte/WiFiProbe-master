@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:id="@+id/edit_query"
+        />
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="6"
+        android:id="@+id/button_query"
+        android:background="@drawable/query"
+        android:layout_margin="3dp"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ededed"
+                android:padding="2dp"
+                android:textColor="@color/fuchsia"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1.15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ededed"
+                android:padding="2dp"
+                android:textColor="@color/fuchsia"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+   <LinearLayout android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_weight="1"
+        android:textColor="@color/fuchsia"
+        android:textSize="13sp" />
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+      <TextView android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:textSize="13sp"
+          android:textColor="#000"
+          android:text="检索方式"/>
+       <Button android:id="@+id/Button"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:text="MAC地址"
+           android:padding="2dp"
+           android:textSize="13sp"
+           android:minHeight="35dp"
+           android:textColor="@color/colorCrimson"/> </LinearLayout>
+
+      <LinearLayout android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:layout_weight="2"
+          android:orientation="vertical">
+       <TextView android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:textSize="13sp"
+           android:textColor="#000"
+           android:text="排序方式"/>
+       <Button android:id="@+id/Button_sort"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:text="名称"
+           android:padding="2dp"
+           android:textSize="13sp"
+           android:textColor="@color/colorCrimson"
+           android:minHeight="35dp"
+           />         </LinearLayout>
+
+    </LinearLayout>
+    <ExpandableListView
+        android:id="@+id/list_db"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/fuchsia"
+        android:divider="@color/colorGold"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"/>
+
+</LinearLayout>

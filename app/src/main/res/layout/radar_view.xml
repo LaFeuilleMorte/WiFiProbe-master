@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+       <ImageView android:layout_width="10dp"
+           android:layout_height="10dp"
+           android:background="@color/fuchsia"
+           android:layout_marginRight="10dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:text="热点"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"/>
+        <ImageView android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#0000FF"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终端"
+            android:textSize="13sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <com.example.administrator.myapplication.custom.RadarViewGroup
+        android:id="@+id/radar"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <com.example.administrator.myapplication.custom.RadarView
+            android:id="@+id/id_scan_circle"
+            android:layout_width="280dp"
+            android:layout_height="280dp"/>
+        </com.example.administrator.myapplication.custom.RadarViewGroup>
+
+    <RelativeLayout
+        android:id="@+id/ry_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:clipChildren="false">
+
+        <com.example.administrator.myapplication.custom.CustomViewPager
+            android:id="@+id/vp"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

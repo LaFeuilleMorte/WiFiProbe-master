@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView android:id="@+id/list_track_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textFilterEnabled="true"
+        android:divider="@color/fuchsia"
+        android:dividerHeight="1dp"
+        >
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏"
+            android:id="@+id/vip_item_user"/>
+        <RatingBar android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/star_track_user"
+            android:numStars="1"
+            android:secondaryProgressTint="@color/colorGold"
+            android:rating="0"
+            android:stepSize="1"/>
+
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reference_res"
+        android:textColor="@color/fuchsia"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/long_lat"
+        android:textColor="@color/fuchsia"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart_above"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+       />
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        />
+</LinearLayout>

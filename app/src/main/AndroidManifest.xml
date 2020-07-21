@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.myapplication">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:name="com.example.administrator.myapplication.SysApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/lauch_icon"
+        android:label="@string/App_Name"
+        android:roundIcon="@drawable/lauch_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="63axfBe6LRWRjQ23UcgVX18aIenUXy3Z" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DeviceListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BTClient"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Any_kind"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".User_list"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Tracking_Mac"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Router_Track"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Result_Of_Collision"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Result_Of_Cacul"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LocalDataBase"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".RemoteDataBase"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".DetailedInfo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CollectorOfMac"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CollisionOfMac"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".History_Of_Router"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Radar_Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".My_Options"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Distribution_count"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Dynamic_Dis"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name=".MyIntentService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <service
+            android:name=".My_Location_Service"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

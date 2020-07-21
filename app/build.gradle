@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.administrator.myapplication"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            exclude 'META-INF/proguard/androidx-annotations.pro'
+        }
+
+        sourceSets {
+            main {
+                jni.srcDirs = []
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+            jni.srcDirs = ['src/main/jni', 'src/main/jni/']
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    buildToolsVersion '28.0.3'
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:support-v13:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-vector-drawable:28.0.0'
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation files('libs/gson-2.4.jar')
+    implementation files('libs/jsoup-1.11.3.jar')
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_margin="13dp"
+        android:layout_height="50dp"
+        android:text="返回首页"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/home"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorGold"
+        android:dividerPadding="4dp"
+        android:id="@+id/line_3"
+        android:layout_below="@+id/home"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginVertical="15dp"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:textColor="#ffffff"
+            android:id="@+id/button_router"
+            android:text="热点" />
+        <Button android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_width="match_parent"
+            android:background="#0000FF"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:id="@+id/button_user"
+            android:text="终端"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorGold"
+        android:dividerPadding="4dp"
+        android:id="@+id/line_2"
+        android:layout_below="@+id/line_3"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/Button_local"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="onConnectButtonClicked"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="25dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="数据库"
+            android:background="#0000ff"
+            ></Button>
+
+        <Button
+            android:id="@+id/Button_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_weight="1"
+            android:text="雷达图"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#0000ff"
+            android:onClick="onQuitButtonClicked"
+            ></Button>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:id="@+id/line_4"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line_2">
+        <Button
+            android:id="@+id/Button_collision"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:text="MAC碰撞"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="25dp"
+           />
+        <Button
+            android:id="@+id/Button_collector"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#0000ff"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="收藏MAC"
+            android:layout_weight="1"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="25dp"
+            />
+    </LinearLayout>
+    <Button android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/distribute"
+        android:layout_below="@+id/line_4"
+        android:background="#0000ff"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginHorizontal="25dp"
+        android:text="追踪"/>
+</RelativeLayout>

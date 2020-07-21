@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:background="#303030">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙客户端设置"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#DCDCDC"
+    android:paddingVertical="20dp"
+    android:orientation="horizontal">
+    <CheckBox android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:id="@+id/yuyin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语音提示"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        />
+    <CheckBox android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:id="@+id/zhendong"
+        android:layout_marginRight="10dp"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="震动"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#C0C0C0"
+        android:paddingVertical="20dp">
+        <CheckBox android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tanchuang"
+            android:layout_weight="1.4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="弹窗"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            />
+        <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:id="@+id/juli_min"
+            android:maxLength="2"
+            android:layout_marginRight="0dp"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="报警距离(m)"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+       <LinearLayout android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="horizontal"
+                      android:paddingVertical="20dp"
+                       android:background="#A9A9A9">
+           <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="账户"
+                   android:textColor="#000000"
+                  android:textSize="23sp"
+               android:layout_marginLeft="13dp"
+                   android:layout_weight="2.5"
+                  android:layout_marginRight="30dp"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="30dp"
+               android:layout_weight="1"
+               android:textSize="21sp"
+               android:id="@+id/zhanghu"
+               android:textColor="#00FA9A" />
+      </LinearLayout>
+</LinearLayout>

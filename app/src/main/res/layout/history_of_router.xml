@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+    <TextView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+        android:layout_weight="1"
+    android:id="@+id/tv_history_tag"
+    />
+    <Button android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_weight="2.2"
+        android:id="@+id/button_of_filter"
+        android:layout_margin="3dp"
+        android:background="@drawable/filter"
+        android:textSize="13sp"
+        />
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按Mac"
+        android:textSize="12sp"
+        android:layout_weight="2"
+        android:textColor="#ff0000"
+        android:id="@+id/options_btn"/>
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="升序"
+        android:textSize="12sp"
+        android:textColor="#ff0000"
+        android:layout_weight="2.1"
+        android:id="@+id/flag_btn"/>
+</LinearLayout>
+    <ExpandableListView
+        android:id="@+id/list_history_router"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/fuchsia"
+        android:divider="#08088a"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"/>
+</LinearLayout>

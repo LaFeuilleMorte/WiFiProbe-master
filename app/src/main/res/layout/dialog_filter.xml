@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:id="@+id/filter_user_mac"
+        />
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <RadioButton
+            android:id="@+id/ch1"
+            android:text="按Mac"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/ch2"
+            android:text="按名称"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:checked="false"/>
+    </RadioGroup>
+</LinearLayout>
